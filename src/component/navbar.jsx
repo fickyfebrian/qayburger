@@ -4,7 +4,7 @@ import { IoLogoFacebook, IoLogoInstagram, IoLogoTwitter } from "react-icons/io5"
 
 const Navbar = () => {
   return (
-    <header className="bg-transparent">
+    <header className="bg-black">
       <div className="max-w-7xl mx-auto flex items-center justify-between p-4">
         <a href="#" className="flex items-center space-x-3">
           <img src={logo} className="h-20" alt="Qayemi Burger Logo" />
