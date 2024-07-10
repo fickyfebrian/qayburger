@@ -1,10 +1,7 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Autoplay, Scrollbar } from "swiper/modules";
-import 'swiper/css/scrollbar';
+import { Autoplay, Scrollbar } from "swiper/modules";
 import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
 
 const images = [
   "/src/assets/banner-burger1.png",
@@ -21,11 +18,11 @@ const Carousel = () => {
         slidesPerView={1}
         pagination={{
           clickable: true,
-          type: 'progressbar', // Use progressbar type for pagination
+          el: '.swiper-pagination',
         }}
         autoplay={{ delay: 3000 }}
         loop={true}
-        modules={[Pagination, Autoplay, Scrollbar]}
+        modules={[Autoplay, Scrollbar]}
         scrollbar={{
           hide: true,
         }}

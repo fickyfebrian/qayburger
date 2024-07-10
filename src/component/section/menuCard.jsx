@@ -11,10 +11,7 @@ const MenuCard = ({ burger }) => {
           className="w-full h-32 object-cover rounded-md transform transition-transform duration-300 hover:scale-105"
         />
       </div>
-      <h2 className="mt-4 text-lg font-semibold">{burger.name}</h2>
-      <p className="mt-2 text-lg font-bold">Rp. {burger.price}</p>
-      <p className="text-lg font-regular">{burger.description}</p>
-
+      <h2 className="mt-4 text-lg font-semibold text-center">{burger.name}</h2>
     </div>
   );
 };

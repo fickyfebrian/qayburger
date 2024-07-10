@@ -44,8 +44,8 @@ const menuItems = [
 const Menu = () => {
   return (
     <div className="container items-center mx-auto px-4 py-8">
-        <h1 className="text-center text-3xl font-bold mb-4 text-black">Our Menu</h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 px-4">
+        <h1 className="text-center text-4xl font-black mb-4 text-black">Our Menu</h1>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 px-4">
         {menuItems.map((item, index) => (
           <MenuCard key={index} burger={item} />
         ))}

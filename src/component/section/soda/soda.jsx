@@ -46,8 +46,8 @@ const Soda = () => {
 
   return (
     <div className="container mx-auto px-4 py-8">
-      <h1 className="text-center text-3xl font-bold mb-4">Soda`s</h1>
-      <Swiper
+        <h1 className="text-center text-4xl font-black mb-4 text-black">Soda`s</h1>
+        <Swiper
         spaceBetween={3}
         slidesPerView={6}
         loop={true}
