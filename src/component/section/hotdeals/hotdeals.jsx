@@ -19,7 +19,7 @@ const hotdealsItems = [
     name: "Burger Deluxe 2",
     description:
       "A juicy and tender beef patty, seasoned to perfection. Fresh lettuce, tomatoes, and onions for a burst of crispness. A tangy pickle slice to add a zesty touch. All sandwiched between a soft toasted bun",
-    image: "./src/assets/promo-1.png",
+    image: "./src/assets/home-image.png",
     extras: "With. Mountain Dew Code Red, French Fries, Pop Corn",
     drink: "/src/assets/soda9.png",
     snacks1: "/src/assets/snack-2.png",

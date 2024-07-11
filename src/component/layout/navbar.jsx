@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../assets/logo2.png"; // Pastikan jalur ini benar
+import logo from "/src/assets/logo2.png"
 import { IoLogoFacebook, IoLogoInstagram, IoLogoTwitter } from "react-icons/io5";
 
 const Navbar = () => {
