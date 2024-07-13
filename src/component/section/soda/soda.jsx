@@ -46,7 +46,7 @@ const Soda = () => {
 
   return (
     <div className="container mx-auto px-4 py-8">
-        <h1 className="text-center text-4xl font-black mb-4 text-black">Soda`s</h1>
+        <h1 className="text-center text-4xl font-black mb-4 text-black bg-yellow-500 px-4 py-4">Soda`s</h1>
         <Swiper
         spaceBetween={3}
         slidesPerView={6}

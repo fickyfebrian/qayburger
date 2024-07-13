@@ -2,7 +2,7 @@ import React from "react";
 
 const MenuCard = ({ burger }) => {
   return (
-    <div className="p-4 rounded-lg shadow-lg hover:shadow-xl bg-transparent  transition duration-300">
+    <div className="bg-transparent  rounded-lg overflow-hidden  m-4 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105">
       <div className="overflow-hidden rounded-md">
         <img
           src={burger.image}

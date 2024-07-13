@@ -16,13 +16,13 @@ const HotdealsCard = ({ promo }) => {
         <Swiper
           spaceBetween={4}
           slidesPerView={1}
+          direction={'horizontal'}
           loop={ true }
           modules={[Pagination, Autoplay, Scrollbar,]}
           pagination={{
             clickable: true,
           }}
           className="nested-swiper w-full h-full"
-          direction='horizontal'
         >
           <SwiperSlide>
             <img

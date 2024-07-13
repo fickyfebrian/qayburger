@@ -47,7 +47,7 @@ const Testimonials = () => {
 
   return (
     <div className="container mx-auto px-4 py-8">
-        <h1 className="text-center text-4xl font-black mb-4 text-black">Testimonials</h1>
+        <h1 className="text-center text-4xl font-black mb-4 text-black bg-yellow-500 px-4 py-4">Testimonials</h1>
         <div className="relative">
         <Swiper
           spaceBetween={20}
