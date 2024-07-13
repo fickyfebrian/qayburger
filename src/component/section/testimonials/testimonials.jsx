@@ -2,6 +2,7 @@ import React from "react";
 import TestimonialsCard from "./testimonialsCard";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
+import { Pagination } from "swiper/modules";
 
 const Testimonials = () => {
   const testimonialsItems = [
@@ -41,19 +42,38 @@ const Testimonials = () => {
       image: "/src/assets/review-5.jpg",
     },
   ];
+
+  // Dummy function untuk simulasi navigasi
   const handleSeeMoreClick = () => {
-    history.push("/testimonials"); // Mengarahkan navigasi ke halaman testimonials
+    console.log("Navigate to testimonials page");
   };
 
   return (
     <div className="container mx-auto px-4 py-8">
-        <h1 className="text-center text-4xl font-black mb-4 text-black bg-yellow-500 px-4 py-4">Testimonials</h1>
-        <div className="relative">
+      <h1 className="text-center text-4xl font-black mb-4 text-black bg-yellow-500 px-4 py-4">
+        Testimonials
+      </h1>
+      <div className="relative">
         <Swiper
           spaceBetween={20}
-          slidesPerView={3.5}
+          slidesPerView={1}
+          modules={Pagination}
+          pagination={{
+            clickable: true,
+          }}
           loop={true}
           className="swiper-container"
+          breakpoints={{
+            640: {
+              slidesPerView: 1,
+            },
+            768: {
+              slidesPerView: 2,
+            },
+            1024: {
+              slidesPerView: 3.5,
+            },
+          }}
         >
           {testimonialsItems.map((item, index) => (
             <SwiperSlide key={index} className="flex justify-center">
@@ -64,7 +84,7 @@ const Testimonials = () => {
         <div className="flex items-center justify-center">
           <button
             onClick={handleSeeMoreClick}
-            className="bg-yellow-500 font-bold rounded-md px-4 py-2"
+            className="bg-yellow-500 font-bold rounded-md px-4 py-2 mt-4"
           >
             See More Testimonials
           </button>

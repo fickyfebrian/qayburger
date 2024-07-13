@@ -1,6 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 
 const TestimonialsCard = ({ review }) => {
+  const [isExpanded, setIsExpanded] = useState(false);
+  const toggleReadMore = () => {
+    setIsExpanded(!isExpanded);
+  };
   return (
     <div className="bg-white  rounded-lg overflow-hidden  m-4 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105">
       <img
@@ -11,9 +15,13 @@ const TestimonialsCard = ({ review }) => {
       <div className="text-center p-6">
         <h2 className="text-xl font-semibold">{review.name}</h2>
         <p className="text-gray-500">{review.profession}</p>
-        <p className="mt-4 text-gray-700">{review.description}</p>
-        <div className="mt-4 flex justify-center space-x-4">
-        </div>
+        <p className={`mt-4 text-gray-700 ${!isExpanded && 'line-clamp-4'}`}>{review.description}</p>
+        <button 
+        onClick={toggleReadMore}
+        className="text-yellow-500 hover:underline mt-2">
+          ReadMore
+        </button>
+        <div className="mt-4 flex justify-center space-x-4"></div>
       </div>
     </div>
   );

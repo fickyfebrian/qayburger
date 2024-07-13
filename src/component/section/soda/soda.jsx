@@ -1,5 +1,5 @@
 import React from "react";
-import { FreeMode, Pagination } from "swiper/modules";
+import { FreeMode } from "swiper/modules";
 import SodaCard from "./sodaCard";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
@@ -24,7 +24,7 @@ const Soda = () => {
     },
     {
       name: "soda5",
-      image: "/src/assets/soda9.png",
+      image: "/src/assets/soda1.png",
     },
     {
       name: "soda6",
@@ -46,12 +46,31 @@ const Soda = () => {
 
   return (
     <div className="container mx-auto px-4 py-8">
-        <h1 className="text-center text-4xl font-black mb-4 text-black bg-yellow-500 px-4 py-4">Soda`s</h1>
-        <Swiper
-        spaceBetween={3}
-        slidesPerView={6}
+      <h1 className="text-center text-4xl font-black mb-4 text-black bg-yellow-500 px-4 py-4">
+        Soda's
+      </h1>
+      <Swiper
+        spaceBetween={10}
+        slidesPerView={2}
         loop={true}
-        modules={[FreeMode, Pagination]}
+        modules={[FreeMode]}
+        breakpoints={{
+          640: {
+            slidesPerView: 2,
+          },
+          768: {
+            slidesPerView: 3,
+          },
+          1024: {
+            slidesPerView: 4,
+          },
+          1280: {
+            slidesPerView: 5,
+          },
+          1536: {
+            slidesPerView: 7,
+          },
+        }}
         className="mySwiper"
       >
         {imageSoda.map((item, index) => (

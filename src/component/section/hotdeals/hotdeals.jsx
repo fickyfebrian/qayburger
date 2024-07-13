@@ -9,7 +9,7 @@ const hotdealsItems = [
     name: "Burger Deluxe",
     description:
       "A delectable Burger Deluxe bursting with flavor. A side of crispy, golden fries. A refreshing beverage to quench your thirst",
-    image: "/src/assets/home-image.png",
+    image: "/src/assets/hotdeals1.png",
     extras: "With. Mountain Dew Major Melon, French Fries, Tortilla",
     drink: "/src/assets/soda8.png",
     snacks1: "/src/assets/snack-2.png",
@@ -19,7 +19,7 @@ const hotdealsItems = [
     name: "Burger Deluxe 2",
     description:
       "A juicy and tender beef patty, seasoned to perfection. Fresh lettuce, tomatoes, and onions for a burst of crispness. A tangy pickle slice to add a zesty touch. All sandwiched between a soft toasted bun",
-    image: "./src/assets/home-image.png",
+    image: "/src/assets/hotdeals2.png",
     extras: "With. Mountain Dew Code Red, French Fries, Pop Corn",
     drink: "/src/assets/soda9.png",
     snacks1: "/src/assets/snack-2.png",
@@ -35,7 +35,7 @@ const Hotdeals = () => {
           Hot Deals
         </h1>
         <Swiper
-          spaceBetween={4}
+          spaceBetween={16}
           slidesPerView={1}
           loop={true}
           pagination={{
@@ -45,7 +45,7 @@ const Hotdeals = () => {
           className="mySwiper"
         >
           {hotdealsItems.map((item, i) => (
-            <SwiperSlide key={i} className="">
+            <SwiperSlide key={i}>
               <HotdealsCard promo={item} />
             </SwiperSlide>
           ))}

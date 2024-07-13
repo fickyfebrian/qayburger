@@ -2,6 +2,7 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Scrollbar } from "swiper/modules";
 import 'swiper/css';
+import 'swiper/css/pagination';
 
 const images = [
   "/src/assets/banner-burger1.png",
@@ -16,15 +17,20 @@ const Carousel = () => {
     <div className="w-full relative pt-24">
       <Swiper
         slidesPerView={1}
-        pagination={{
-          clickable: true,
-          el: '.swiper-pagination',
-        }}
         autoplay={{ delay: 3000 }}
         loop={true}
         modules={[Autoplay, Scrollbar]}
-        scrollbar={{
-          hide: true,
+        scrollbar={{ hide: true }}
+        breakpoints={{
+          640: {
+            slidesPerView: 1,
+          },
+          768: {
+            slidesPerView: 1,
+          },
+          1024: {
+            slidesPerView: 1,
+          },
         }}
         className="swiper-container relative"
       >
@@ -34,12 +40,13 @@ const Carousel = () => {
               <img
                 src={image}
                 alt={`Slide ${i + 1}`}
-                className="object-fill lg:object-cover h-auto w-auto"
+                className="object-cover h-full w-full"
               />
             </div>
           </SwiperSlide>
         ))}
       </Swiper>
+      <div className="swiper-pagination"></div>
     </div>
   );
 };
