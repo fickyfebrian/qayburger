@@ -1,23 +1,24 @@
-import Navbar from "./component/layout/navbar"
-import Menu from "./component/section/menu/menu"
-import Carousel from "./component/carousel"
-import Testimonials from "./component/section/testimonials/testimonials"
-import Soda from "./component/section/soda/soda"
-import Hotdeals from "./component/section/hotdeals/hotdeals"
-import Footer from "./component/layout/footer"
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from "./pages/home";
+import Products from "./pages/products";
+import Location from "./pages/location";
+import Contact from "./pages/contact";
+import Navbar from './component/layout/navbar';
+import Testimonials from './pages/testimonials';
 
 function App() {
   return (
-    <div>
-     <Navbar />
-     <Carousel />
-     <Hotdeals />
-     <Menu />
-     <Soda />
-     <Testimonials />
-     <Footer />
-    </div>
-  )
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/products" element={<Products />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/location" element={<Location />} />
+        <Route path="/testimonials" element={<Testimonials/>} />
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;

@@ -3,6 +3,7 @@ import TestimonialsCard from "./testimonialsCard";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
 import { Pagination } from "swiper/modules";
+import { useNavigate, useNavigation } from "react-router-dom";
 
 const Testimonials = () => {
   const testimonialsItems = [
@@ -42,10 +43,10 @@ const Testimonials = () => {
       image: "/src/assets/review-5.jpg",
     },
   ];
-
+  const navigate = useNavigate();
   // Dummy function untuk simulasi navigasi
   const handleSeeMoreClick = () => {
-    console.log("Navigate to testimonials page");
+    navigate("/testimonials");
   };
 
   return (

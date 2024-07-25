@@ -3,6 +3,7 @@ import logo from "/src/assets/logo3.png";
 import { FaLocationDot } from "react-icons/fa6";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { IoMail } from "react-icons/io5";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const location = [
@@ -56,7 +57,7 @@ const Footer = () => {
     <footer className="bg-black text-white py-6 px-4 md:px-12">
       <div className="container mx-auto flex flex-col items-center">
         <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-4 w-full text-left">
-          <a href="#" className="w-full">
+          <a href="/" className="w-full">
             <img
               src={logo}
               alt="Logo"
@@ -66,7 +67,7 @@ const Footer = () => {
           </a>
 
           <div className="px-4 py-8 flex flex-col items-center">
-            <h2 className="font-bold text-2xl mb-4">Our Location</h2>
+            <Link to="/location" className="hover:text-yellow-500 font-bold text-2xl mb-4">Our Location</Link>
             {location.map((location, i) => (
               <div key={i} className="flex items-center hover:text-yellow-500">
                 <FaLocationDot className="mr-2" />
