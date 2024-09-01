@@ -3,13 +3,17 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Scrollbar } from "swiper/modules";
 import 'swiper/css';
 import 'swiper/css/pagination';
-
+import banner1 from "../../public/assets/banner-burger1.png"
+import banner2 from "../../public/assets/banner-burger2.png"
+import banner3 from "../../public/assets/banner-burger3.png"
+import banner4 from "../../public/assets/banner-burger4.png"
+import banner5 from "../../public/assets/banner-burger5.png"
 const images = [
-  "/src/assets/banner-burger1.png",
-  "/src/assets/banner-burger2.png",
-  "/src/assets/banner-burger3.png",
-  "/src/assets/banner-burger4.png",
-  "/src/assets/banner-burger5.png",
+  banner1,
+  banner2,
+  banner3,
+  banner4,
+  banner5,
 ];
 
 const Carousel = () => {
@@ -34,11 +38,11 @@ const Carousel = () => {
         }}
         className="swiper-container relative"
       >
-        {images.map((image, i) => (
+        {images.map((images, i) => (
           <SwiperSlide key={i}>
             <div className="rounded-2xl h-[520px] flex justify-between items-center">
               <img
-                src={image}
+                src={images}
                 alt={`Slide ${i + 1}`}
                 className="object-cover h-full w-full"
               />
