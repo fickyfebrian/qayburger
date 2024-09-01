@@ -2,16 +2,22 @@ import React from "react";
 
 const MenuCard = ({ burger }) => {
   return (
-    <div className="px-2 py-2 rounded-lg bg-transparent  transition duration-300">
-      <div className="overflow-hidden rounded-md">
-        <img
-          src={burger.image}
-          alt={burger.name}
-          style={{ objectFit: "cover", height: 250, width: "100%" }}
-          className="w-full h-32 sm:w-full object-cover rounded-md transform transition-transform duration-300 hover:scale-105"
-        />
+    <div
+      className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 transform hover:scale-105 active:bg-yellow-300"
+      onClick={() => console.log(`Clicked on ${burger.name}`)}
+    >
+      <img
+        src={burger.image}
+        alt={burger.name}
+        className="w-full h-56 object-contain"
+      />
+      <div className="p-4">
+        <h2 className="text-lg font-bold text-black">{burger.name}</h2>
+        <p className="text-gray-600">{burger.description}</p>
+        <p className="text-xl font-semibold text-yellow-500 mt-2">
+          Rp {burger.price}
+        </p>
       </div>
-      <h2 className="mt-4 text-lg font-semibold text-center">{burger.name}</h2>
     </div>
   );
 };

@@ -3,27 +3,35 @@ import { FreeMode, Pagination } from "swiper/modules";
 import HotdealsCard from "./hotdealsCard";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
+import thumbnail from "../../../../public/assets/hotdeals1.png";
+import soda1 from "../../../../public/assets/soda8.png";
+import snacks1 from "../../../../public/assets/snack-2.png";
+import snacks2 from "../../../../public/assets/snack-4.png";
+import thumbnail2 from "../../../../public/assets/hotdeals2.png"
+import soda2 from "../../../../public/assets/soda8.png";
+import snacks3 from "../../../../public/assets/snack-2.png";
+import snacks4 from "../../../../public/assets/snack-6.png";
 
 const hotdealsItems = [
   {
     name: "Burger Deluxe",
     description:
       "A delectable Burger Deluxe bursting with flavor. A side of crispy, golden fries. A refreshing beverage to quench your thirst",
-    image: "/src/assets/hotdeals1.png",
+    image: thumbnail,
     extras: "With. Mountain Dew Major Melon, French Fries, Tortilla",
-    drink: "/src/assets/soda8.png",
-    snacks1: "/src/assets/snack-2.png",
-    snacks2: "/src/assets/snack-4.png",
+    drink: soda1,
+    snacks1: snacks1,
+    snacks2: snacks2,
   },
   {
     name: "Burger Deluxe 2",
     description:
       "A juicy and tender beef patty, seasoned to perfection. Fresh lettuce, tomatoes, and onions for a burst of crispness. A tangy pickle slice to add a zesty touch. All sandwiched between a soft toasted bun",
-    image: "/src/assets/hotdeals2.png",
+    image: thumbnail2,
     extras: "With. Mountain Dew Code Red, French Fries, Pop Corn",
-    drink: "/src/assets/soda9.png",
-    snacks1: "/src/assets/snack-2.png",
-    snacks2: "/src/assets/snack-6.png",
+    drink: soda2,
+    snacks1: snacks3,
+    snacks2: snacks4,
   },
 ];
 
