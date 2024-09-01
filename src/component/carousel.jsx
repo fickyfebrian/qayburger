@@ -8,6 +8,7 @@ import banner2 from "../../public/assets/banner-burger2.png"
 import banner3 from "../../public/assets/banner-burger3.png"
 import banner4 from "../../public/assets/banner-burger4.png"
 import banner5 from "../../public/assets/banner-burger5.png"
+
 const images = [
   banner1,
   banner2,
@@ -25,26 +26,15 @@ const Carousel = () => {
         loop={true}
         modules={[Autoplay, Scrollbar]}
         scrollbar={{ hide: true }}
-        breakpoints={{
-          640: {
-            slidesPerView: 1,
-          },
-          768: {
-            slidesPerView: 1,
-          },
-          1024: {
-            slidesPerView: 1,
-          },
-        }}
-        className="swiper-container relative"
+        className="relative"
       >
-        {images.map((images, i) => (
+        {images.map((image, i) => (
           <SwiperSlide key={i}>
-            <div className="rounded-2xl h-[520px] flex justify-between items-center">
+            <div className="w-full h-[520px] sm:h-[400px] md:h-[450px] lg:h-[520px] flex justify-center items-center overflow-hidden">
               <img
-                src={images}
+                src={image}
                 alt={`Slide ${i + 1}`}
-                className="object-cover h-full w-full"
+                className="object-scale-down w-auto h-full lg:object-cover"
               />
             </div>
           </SwiperSlide>

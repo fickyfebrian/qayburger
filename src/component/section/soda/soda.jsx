@@ -3,44 +3,53 @@ import { FreeMode } from "swiper/modules";
 import SodaCard from "./sodaCard";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
+import soda1 from "../../../../public/assets/soda1.png"
+import soda2 from "../../../../public/assets/soda2.png"
+import soda3 from "../../../../public/assets/soda3.png"
+import soda4 from "../../../../public/assets/soda4.png"
+import soda5 from "../../../../public/assets/soda9.png"
+import soda6 from "../../../../public/assets/soda6.png"
+import soda7 from "../../../../public/assets/soda7.png"
+import soda8 from "../../../../public/assets/soda8.png"
+import soda9 from "../../../../public/assets/soda9.png"
 
 const Soda = () => {
   const imageSoda = [
     {
       name: "soda1",
-      image: "/src/assets/soda1.png",
+      image: soda1,
     },
     {
       name: "soda2",
-      image: "/src/assets/soda2.png",
+      image: soda2
     },
     {
       name: "soda3",
-      image: "/src/assets/soda3.png",
+      image: soda3,
     },
     {
       name: "soda4",
-      image: "/src/assets/soda4.png",
+      image: soda4,
     },
     {
       name: "soda5",
-      image: "/src/assets/soda1.png",
+      image: soda5,
     },
     {
       name: "soda6",
-      image: "/src/assets/soda6.png",
+      image: soda6,
     },
     {
       name: "soda7",
-      image: "/src/assets/soda7.png",
+      image: soda7,
     },
     {
       name: "soda8",
-      image: "/src/assets/soda8.png",
+      image: soda8,
     },
     {
       name: "soda9",
-      image: "/src/assets/soda9.png",
+      image: soda9,
     },
   ];
 

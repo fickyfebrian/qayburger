@@ -4,6 +4,11 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
 import { Pagination } from "swiper/modules";
 import { useNavigate, useNavigation } from "react-router-dom";
+import testiImage1 from "../../../../public/assets/review-1.jpg"
+import testiImage2 from "../../../../public/assets/review-2.jpg"
+import testiImage3 from "../../../../public/assets/review-3.jpg"
+import testiImage4 from "../../../../public/assets/review-4.jpg"
+import testiImage5 from "../../../../public/assets/review-5.jpg"
 
 const Testimonials = () => {
   const testimonialsItems = [
@@ -12,35 +17,35 @@ const Testimonials = () => {
       profession: "Teacher",
       description:
         "As a kindergarten teacher, I'm always looking for a filling and refreshing snack to enjoy during my breaks. The burgers and sodas from QB are the perfect choice! The burgers are made with soft buns, juicy patties, and delicious sauces. The sodas are also cold and refreshing, perfect for enjoying on a hot day. The combination of the burger and soda leaves me feeling full and energized to continue teaching.",
-      image: "/src/assets/review-1.jpg",
+      image: testiImage1,
     },
     {
       name: "Yusi",
       profession: "Programmer",
       description:
         "As a programmer, I often work overtime and need a hearty meal to eat at night. The burgers and sodas from QB are always my go-to. The burgers are big and filling, and the sodas help me stay awake while I'm working. I really like the classic flavor of the burgers, which isn't too overpowering. The sodas also come in a variety of flavors, so I can always choose one that suits my taste.",
-      image: "/src/assets/review-2.jpg",
-    },
+        image: testiImage2,
+      },
     {
       name: "Dimas",
       profession: "Student",
       description:
         "As a student, I'm always looking for delicious and affordable food. The burgers and sodas from QB are the answer! The prices are very affordable, but the quality of the food is just as good as any other burger restaurant. The burgers are always made with fresh ingredients, and the sodas are cold and refreshing. They're perfect for enjoying with friends while hanging out or doing homework.",
-      image: "/src/assets/review-3.jpg",
+        image: testiImage3,
     },
     {
       name: "Lala",
       profession: "Athlete",
       description:
         "As an athlete, I need food that is high in protein and calories to support my training. The burgers and sodas from QB are a great source of protein and calories. The burgers are packed with beef, and the sodas provide the extra energy I need when I'm working out. Plus, these burgers and sodas are easy to take with you and enjoy anytime, anywhere.",
-      image: "/src/assets/review-4.jpg",
+        image: testiImage4,
     },
     {
       name: "Eka",
       profession: "Athlete",
       description:
         "As an athlete, I need food that is high in protein and calories to support my training. The burgers and sodas from QB are a great source of protein and calories. The burgers are packed with beef, and the sodas provide the extra energy I need when I'm working out. Plus, these burgers and sodas are easy to take with you and enjoy anytime, anywhere.",
-      image: "/src/assets/review-5.jpg",
+        image: testiImage5,
     },
   ];
   const navigate = useNavigate();
